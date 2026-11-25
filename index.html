@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H&S Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <h1>H&S Tracker</h1>
+    </header>
+    <div class="welcome">
+        <h2>Welcome to Habit & Streak Tracker</h2>
+    </div>
+    <p class="description">Track your habits and streaks to stay motivated and achieve your goals!</p>
+
+    <main class="tracker">
+        <form id="habitForm" class="habitForm">
+            <input type="text" id="habitInput" placeholder="Enter your habit" required>
+            <button type="submit">Add Habit</button>
+        </form>
+
+        <section class="presetSection">
+            <h3>Popular habits</h3>
+            <div id="presetList" class="presetList"></div>
+        </section>
+
+        <section class="habitSection">
+            <h3>Your habits</h3>
+            <div id="habitList" class="habitList"></div>
+        </section>
+
+        <section class="chartSection">
+            <h3>7-Day Streak Performance</h3>
+            <canvas id="streakChart" width="700" height="260"></canvas>
+        </section>
+    </main>
+</body>
+</html>
